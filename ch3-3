@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	double a,b,c,s,Area;
+	cout<<"请输入三角形三条边长:"<<'\n';
+	cin>>a>>b>>c;
+	s=(a+b+c)/2;
+	Area=sqrt( s* (s-a) * (s-b)*(s-c));
+	cout<<"三角形面积="<<fixed<<setprecision(2)<<Area<<endl;
+	return 0; 
+}

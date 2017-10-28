@@ -1,0 +1,24 @@
+# 20171003330
+//函数重载
+#include <iostream>
+using namespace std;
+int min(int,int);
+double min(double,double);
+int main()
+{
+	int a,b;
+	cout<<"请输入两个整数进行比较：";	cin>>a>>b;
+	cout<<"较小值为："<<min(a,b)<<endl;
+	double c,d;
+	cout<<"请输入两个实数进行比较：";	cin>>c>>d;
+	cout<<"较小值为："<<min(c,d)<<endl;
+return 0;
+}
+int min(int x,int y)
+{
+	return (x<y?x:y);	
+} 
+double min(double x,double y)
+{
+	return (x<y?x:y);
+}
